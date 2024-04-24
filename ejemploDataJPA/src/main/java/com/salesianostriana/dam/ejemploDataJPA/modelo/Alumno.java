@@ -3,6 +3,7 @@ package com.salesianostriana.dam.ejemploDataJPA.modelo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor @AllArgsConstructor
 @Data
+@Table(name="Alumnado")
 public class Alumno {
 
 	@Id @GeneratedValue

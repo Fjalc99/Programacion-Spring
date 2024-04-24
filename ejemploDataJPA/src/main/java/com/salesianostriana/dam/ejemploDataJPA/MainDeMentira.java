@@ -1,5 +1,7 @@
 package com.salesianostriana.dam.ejemploDataJPA;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,6 +26,11 @@ public class MainDeMentira {
 		 repo.save(new Alumno("Ángel","Naranjo González","angel.naranjo@salesianos.edu"));
 	     repo.save(new Alumno("Rafael", "Villar Liñán", "rafael.villar@salesianos.edu"));
 	
+	     
+	    
+	     
+	    //repo.findAll().forEach(a -> System.out.println(a));
+	    repo.findAll().forEach(System.out::println);
 	}
 	
 	

@@ -1,0 +1,16 @@
+2024-04-24 13:51:14.061718+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ALUMNO JOIN [*]ON (curso_id = curso_id_tutor)"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT * FROM ALUMNO JOIN [*]ON (curso_id = curso_id_tutor)"; expected "identifier"; SQL statement:
+SELECT * FROM ALUMNO JOIN ON (curso_id = curso_id_tutor) [42001-224]
+2024-04-24 13:51:46.137616+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR"
+Syntax error in SQL statement "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR"; SQL statement:
+SELECT * FROM ALUMNO CURSO_ID CURSO ID NOMBRE TUTOR [42000-224]
+2024-04-24 13:51:53.121309+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE"
+Syntax error in SQL statement "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE"; SQL statement:
+SELECT * FROM ALUMNO CURSO_ID CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE [42000-224]
+2024-04-24 13:51:55.713645+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE"
+Syntax error in SQL statement "SELECT * FROM ALUMNO CURSO_ID [*]CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE"; SQL statement:
+SELECT * FROM ALUMNO CURSO_ID CURSO ID NOMBRE TUTOR ID APELLIDOS EMAIL NOMBRE [42000-224]
