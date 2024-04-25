@@ -1,8 +1,9 @@
-package com.salesianostriana.dam.manytoone.model;
+package com.salesianostriana.dam.composicion.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -21,20 +22,41 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Curso {
+public class Avion {
 	
 	@Id
 	@GeneratedValue
 	private Long id;
 	
-	private String nombre, tutor;
+	private String modelo;
 	
+	private int maxPasajeros;
 	
 	@ToString.Exclude
 	@EqualsAndHashCode.Exclude
-	@OneToMany(mappedBy="curso", fetch = FetchType.EAGER)
-	@Builder.Default  //Con esto podemos hacer que el builder coja la lista de alumnos en este caso
-	private List<Alumno> alumnos = new ArrayList<>();
-	
+	@Builder.Default
+	@OneToMany(
+			mappedBy="avion", 
+			fetch = FetchType.EAGER,
+			cascade = CascadeType.ALL,
+			orphanRemoval = true
+	)
+	private List<Asiento> asientos = new ArrayList<>();
 
+	
+	// MÉTODOS HELPER
+	
+	public void addAsiento(Asiento a) {
+		a.setAvion(this);
+		this.asientos.add(a);
+	}
+	
+	public void removeAsiento(Asiento a) {
+		this.asientos.remove(a);
+		a.setAvion(null);
+		
+	}
+	
+	
+	
 }

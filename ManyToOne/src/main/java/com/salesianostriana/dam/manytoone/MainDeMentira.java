@@ -22,10 +22,17 @@ public class MainDeMentira {
 	@PostConstruct
 	public void ejecutar() {
 		
-		Alumno a1 = new Alumno();
+		/*Alumno a1 = new Alumno();
 		a1.setNombre("Pepe");
 		a1.setApellidos("Pérez Pérez");
-		a1.setEmail("pepe@gmail.com");
+		a1.setEmail("pepe@gmail.com");*/
+		
+		//Asi es como se crea una entidad y siempre hay que tener NoArgsConstructor, AllArgsConstructor, Builder
+		Alumno a1 = Alumno.builder()
+				.nombre("Pepe")
+				.apellidos("Segura Perez")
+				.email("pepe@gmail.com")
+				.build();
 		
 		Alumno a2 = new Alumno();
 		a2.setNombre("María");
@@ -35,9 +42,16 @@ public class MainDeMentira {
 		alumnoRepositorio.save(a1);
 		alumnoRepositorio.save(a2);
 		
+		/*
 		Curso c = new Curso();
 		c.setNombre("1º DAM");
-		c.setTutor("Miguel");
+		c.setTutor("Miguel");*/
+		
+		Curso c = Curso.builder()
+				.nombre("1ºDAM")
+				.tutor("Miguel Campos")
+				.build();
+		
 		
 		cursoRepositorio.save(c);
 		/*
