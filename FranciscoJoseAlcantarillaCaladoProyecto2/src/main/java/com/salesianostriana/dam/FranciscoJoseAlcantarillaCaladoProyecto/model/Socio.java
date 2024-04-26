@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 public class Socio {
 
 	private int idSocio;
-	private String nombre, primerApelllido, segundoApellido;
-	private String prefijo, telefono, email, repetirEmail;
-	private String direccion, pais, provincia, codigoPostal;
+	private String nombre, apellidos;
+	private String telefono, email, repetirEmail;
+	private String direccion, provincia, codigoPostal;
 	private String dni, contrasenia, repetirContrasenia, nombreUsuario;
 	private LocalDate fechaDeNacimiento;
 }
