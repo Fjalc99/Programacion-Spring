@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragmentos/header::header"></head>
+    <body>
+
+        <nav th:replace="~{fragmentos/navLogin:navLogin}">
+
+        </nav>
+
+
+          <main>
+
+            <div class="container mt-3 my-3">
+                <h2>Hazte socio</h2>
+                <form action="" method="" name="NombreYApellidos">
+                  <div class="row">
+                    <div class="col">
+                      <label for="nombre" class="form-label">Nombre</label>  
+                      <input type="text" class="form-control" name="nombre">
+                    </div>
+                    <div class="col">
+                       <label for="PrimerApellido" class="form-label">Primer Apellido</label> 
+                      <input type="text" class="form-control"name="PrimerApellido">
+                    </div>
+                    <div class="col">
+                        <label for="SegundoApellido" class="form-label">Segundo Apellido</label>
+                        <input type="text" class="form-control" name="SegundoApellido">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="container mt-3 my-3">
+                <form action="" method="" name="TelefonoYFecha">
+                  <div class="row align-items-end">
+                    <div class="col">
+                        <label for="fechaNacimiento" class="form-label">Fecha nacimiento</label>
+                      <input type="date" class="form-control" name="fechaNacimiento">
+                    </div>
+                    <div class="col">
+                        <label for="prefijo" class="form-label">Prefijo</label>
+                        <select class="form-select" id="prefijo" name="prefijo">
+                          <option>España(+34)</option>
+                          <option>Portugal(+351)</option>
+                          <option>Andorra(+376)</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                    <label for="telefono" class="form-label">Telefono</label>
+                      <input type="tel" class="form-control"  name="telefono">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="container mt-3 my-3">
+                <form action="" method="" name="DireccionYPais">
+                  <div class="row">
+                    <div class="col">
+                      <label for="direccion" class="form-label">Dirección</label>  
+                      <input type="text" class="form-control" name="nombre">
+                    </div>
+                    <div class="col">
+                       <label for="dni" class="form-label">DNI</label> 
+                      <input type="text" class="form-control"name="dni">
+                    </div>
+                    <div class="col">
+                        <label for="pais" class="form-label">País</label>
+                        <input type="text" class="form-control" name="pais">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="container mt-3 my-3">
+                <form action="" method="" name="CodigoPostalYProvinciaYUsuario">
+                  <div class="row">
+                    <div class="col">
+                      <label for="provincia" class="form-label">Provincia</label>  
+                      <input type="text" class="form-control" name="provincia">
+                    </div>
+                    <div class="col">
+                       <label for="codigoPostal" class="form-label">Código Postal</label> 
+                      <input type="number" class="form-control"name="codigoPostal">
+                    </div>
+                    <div class="col">
+                        <label for="nombreUsuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" name="nombreUsuario">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="container mt-3 my-3">
+                <form action="" method="" name="CorreoYcontraseña">
+                  <div class="row">
+                    <div class="col">
+                      <label for="contraseña" class="form-label">Contraseña</label>  
+                      <input type="password" class="form-control" name="contraseña">
+                    </div>
+                    <div class="col">
+                       <label for="repetirContraseña" class="form-label">Repetir contraseña</label> 
+                      <input type="password" class="form-control"name="repetirContraseña">
+                    </div>
+                    <div class="col">
+                        <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" name="correoElectronicos">
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+
+         </main>
+
+        <footer id="colorFooter" class="container-fluid text-center text-light">
+            <section class="row">
+                <div class="col-12 col-lg-4">
+                    <h3>Redes sociales</h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3>Contacta con nosotros</h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3>Legal</h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </section>
+        
+        
+        </footer>
+    </body>
+</html>

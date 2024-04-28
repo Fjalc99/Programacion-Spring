@@ -21,6 +21,6 @@ public class ProductoController {
 	private String listarProductos(Model model) {
 		
 		model.addAttribute("listaProductos", service.getLista());
-		return "Productos";
+		return "productosVistaAdmin";
 	}
 }
