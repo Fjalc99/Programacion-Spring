@@ -15,8 +15,6 @@ public class ProductoController {
 	private ProductoService service;
 	
 	
-	
-	
 	@GetMapping("/producto")
 	private String listarProductos(Model model) {
 		
