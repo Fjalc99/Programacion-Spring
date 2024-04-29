@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Socio {
 
 	@Id @GeneratedValue
-	private int idSocio;
+	private Long id;
 	
 	private String nombre, apellidos;
 	private String telefono, email;

@@ -1,6 +1,5 @@
 package com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.model;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -8,15 +7,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity @Data @AllArgsConstructor @NoArgsConstructor
+@Data 
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
 public class Producto {
 
 	@Id @GeneratedValue
-	private int idProducto;
+	private Long id;
 	
-	private String nombreProd;
-	private String descripcionProd;
+	private String nombre;
+	private String descripcion;
 	private double precio;
-	//private String imagen;
+	
 	
 }
