@@ -32,17 +32,17 @@
 		<thead>
 			<tr>
 				
-				<th>Nombre</th>
-				<th>Apellidos</th>
-				<th>Telefono</th>
-				<th>Email</th>
-                <th>Dirección</th>
-                <th>Provincia</th>
-                <th>Codigo Postal</th>
-                <th>DNI</th>
-                <th>Contraseña</th>
-                <th>RepetirContraseña</th>
-                <th>Fecha de nacimiento</th>
+		<th>Nombre</th>
+		<th>Apellidos</th>
+		<th>Telefono</th>
+		<th>Email</th>
+    <th>Dirección</th>
+    <th>Provincia</th>
+    <th>Codigo Postal</th>
+    <th>DNI</th>
+    <th>Contraseña</th>
+    <th>Repetir Contraseña</th>
+    <th>Fecha de nacimiento</th>
 				
 			</tr>
 		</thead>
@@ -51,17 +51,17 @@
 			
 
 			<tr th:each="Socio : ${listaSocios}">
-				<td th:text="${socio.nombre}"></td>
-				<td th:text="${socio.apellidos}"></td>
-				<td th:text="${socio.telefono}"></td>
-				<td th:text="${socio.email}"></td>
-                <td th:text="${socio.direccion}"></td>
-                <td th:text="${socio.provincia}"></td>
-                <td th:text="${socio.codigoPostal}"></td>
-                <td th:text="${socio.dni}"></td>
-                <td th:text="${socio.contrasenia}"></td>
-                <td th:text="${socio.repetirContrasenia}"></td>
-                <td th:text="${#temporals.format(socio.fechaDeNacimiento)}"></td>
+		<td th:text="${socio.nombre}"></td>
+		<td th:text="${socio.apellidos}"></td>
+		<td th:text="${socio.telefono}"></td>
+		<td th:text="${socio.email}"></td>
+    <td th:text="${socio.direccion}"></td>
+    <td th:text="${socio.provincia}"></td>
+    <td th:text="${socio.codigoPostal}"></td>
+    <td th:text="${socio.dni}"></td>
+    <td th:text="${socio.contrasenia}"></td>
+    <td th:text="${socio.repetirContrasenia}"></td>
+    <td th:text="${#temporals.format(socio.fechaDeNacimiento, 'dd-MM-YY HH:mm')}"></td>
 				
 			</tr>
 		</tbody>

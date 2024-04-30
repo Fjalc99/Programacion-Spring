@@ -18,9 +18,15 @@ public class Socio {
 	@Id @GeneratedValue
 	private Long id;
 	
-	private String nombre, apellidos;
-	private String telefono, email;
-	private String direccion, provincia, codigoPostal;
-	private String dni, contrasenia, repetirContrasenia;
+	private String nombre;
+	private String apellidos;
+	private String telefono; 
+	private String email;
+	private String direccion; 
+	private String provincia; 
+	private String codigoPostal;
+	private String dni;
+	private String contrasenia;
+	private String repetirContrasenia;
 	private LocalDate fechaDeNacimiento;
 }

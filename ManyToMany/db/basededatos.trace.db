@@ -1,0 +1,24 @@
+2024-04-30 13:54:09.055507+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *  [*]jdbc:h2:./db/basededatos"
+Syntax error in SQL statement "SELECT *  [*]jdbc:h2:./db/basededatos"; SQL statement:
+SELECT *  jdbc:h2:./db/basededatos [42000-224]
+2024-04-30 13:54:16.126453+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *  [*]MATRICULA"
+Syntax error in SQL statement "SELECT *  [*]MATRICULA"; SQL statement:
+SELECT *  MATRICULA [42000-224]
+2024-04-30 13:54:16.934117+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *  [*]MATRICULA"
+Syntax error in SQL statement "SELECT *  [*]MATRICULA"; SQL statement:
+SELECT *  MATRICULA [42000-224]
+2024-04-30 13:54:18.118444+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *  [*]MATRICULA"
+Syntax error in SQL statement "SELECT *  [*]MATRICULA"; SQL statement:
+SELECT *  MATRICULA [42000-224]
+2024-04-30 13:58:10.614055+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ASIGNATURA ALUMNO"; se esperaba "ALTER, ANALYZE"
+Syntax error in SQL statement "[*]ASIGNATURA ALUMNO"; expected "ALTER, ANALYZE"; SQL statement:
+ASIGNATURA ALUMNO [42001-224]
+2024-04-30 13:58:16.296457+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ASIGNATURA ALUMNO ALUMNO ALUMNO"; se esperaba "ALTER, ANALYZE"
+Syntax error in SQL statement "[*]ASIGNATURA ALUMNO ALUMNO ALUMNO"; expected "ALTER, ANALYZE"; SQL statement:
+ASIGNATURA ALUMNO ALUMNO ALUMNO [42001-224]

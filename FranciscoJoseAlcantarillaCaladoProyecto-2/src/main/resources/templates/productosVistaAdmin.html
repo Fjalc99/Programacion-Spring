@@ -43,8 +43,8 @@
 
 			<tr th:each="producto : ${listaProductos}">
 				<td th:text="${productoStat.count}"></td>
-				<td th:text="${producto.nombreProd}"></td>
-				<td th:text="${producto.descripcionProd}">Red chair</td>
+				<td th:text="${producto.nombre}"></td>
+				<td th:text="${producto.descripcion}">Red chair</td>
 				<td th:text="${#numbers.formatDecimal(producto.precio, 1, 2)+' €'}">$350</td>
 				
 			</tr>
