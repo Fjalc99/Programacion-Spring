@@ -50,18 +50,18 @@
 
 			
 
-			<tr th:each="Socio : ${listaSocios}">
-		<td th:text="${socio.nombre}"></td>
-		<td th:text="${socio.apellidos}"></td>
-		<td th:text="${socio.telefono}"></td>
-		<td th:text="${socio.email}"></td>
+	<tr th:each="socio : ${listaSocios}">
+	<td th:text="${socio.nombre}"></td>
+	<td th:text="${socio.apellidos}"></td>
+	<td th:text="${socio.telefono}"></td>
+	<td th:text="${socio.email}"></td>
     <td th:text="${socio.direccion}"></td>
     <td th:text="${socio.provincia}"></td>
     <td th:text="${socio.codigoPostal}"></td>
     <td th:text="${socio.dni}"></td>
     <td th:text="${socio.contrasenia}"></td>
     <td th:text="${socio.repetirContrasenia}"></td>
-    <td th:text="${#temporals.format(socio.fechaDeNacimiento, 'dd-MM-YY HH:mm')}"></td>
+    <td th:text="${#temporals.format(socio.fechaDeNacimiento, 'YYYY-MM-dd')}"></td>
 				
 			</tr>
 		</tbody>

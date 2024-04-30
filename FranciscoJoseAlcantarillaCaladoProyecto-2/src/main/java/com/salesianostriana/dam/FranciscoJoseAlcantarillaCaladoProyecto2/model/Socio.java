@@ -2,6 +2,9 @@ package com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.model;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -28,5 +31,7 @@ public class Socio {
 	private String dni;
 	private String contrasenia;
 	private String repetirContrasenia;
+	
+	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private LocalDate fechaDeNacimiento;
 }
