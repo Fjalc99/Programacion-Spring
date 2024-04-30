@@ -11,11 +11,11 @@ import com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.service
 public class ProductoController {
 
 	@Autowired
-	private ProductoService service;
+	private ProductoService productoservice;
 	
 	@GetMapping("/producto")
 	private String listarProductos(Model model) {
-		model.addAttribute("listaProductos", service.getLista());
+		model.addAttribute("listaProductos", productoservice.findAll());
 		return "productosVistaAdmin";
 	}
 	

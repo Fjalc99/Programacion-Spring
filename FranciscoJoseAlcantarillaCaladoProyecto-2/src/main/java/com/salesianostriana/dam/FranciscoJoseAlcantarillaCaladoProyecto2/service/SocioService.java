@@ -1,26 +1,15 @@
 package com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.service;
 
-import java.util.Arrays;
-import java.util.List;
+
 
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.model.Socio;
+import com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.repository.SocioRepository;
+import com.salesianostriana.dam.FranciscoJoseAlcantarillaCaladoProyecto2.service.base.BaseServiceImpl;
 
 @Service
-public class SocioService {
+public class SocioService extends BaseServiceImpl <Socio, Long, SocioRepository> {
 
-	public List <Socio> getLista(){
-		return Arrays.asList(
-					
-					new Socio (),
-					new Socio (),
-					new Socio (),
-					new Socio (),
-					new Socio (),
-					new Socio ()
-				
-				
-				);
-	}
+	
 }
