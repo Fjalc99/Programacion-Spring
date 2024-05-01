@@ -13,10 +13,16 @@ public class ProductoController {
 	@Autowired
 	private ProductoService productoservice;
 	
-	@GetMapping("/producto")
+	@GetMapping("/productoAdmin")
 	private String listarProductos(Model model) {
 		model.addAttribute("listaProductos", productoservice.findAll());
 		return "productosVistaAdmin";
 	}
 	
+	
+	@GetMapping("/producto")
+	private String vistaTienda(Model model) {
+		model.addAttribute("listaProductos", productoservice.findAll());
+		return "producto";
+	}
 }

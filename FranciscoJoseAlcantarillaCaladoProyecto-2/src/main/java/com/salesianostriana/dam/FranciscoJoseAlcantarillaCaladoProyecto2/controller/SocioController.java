@@ -41,7 +41,14 @@ public class SocioController {
 		return "socioVistaAdmin";
 	}
 	
-	
+	@GetMapping("/registroSocios")
+	private String formRegistro (Model model) {
+		Socio socio = new Socio ();
+		
+		model.addAttribute("formSocios", socio);
+		
+		return "registroSocio";
+	}
 	
 	
 }
