@@ -1,129 +1,123 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-  <head th:replace="~{fragmentos/header::header}"> 
- 
-</head>
-    <body>
 
-      <nav id="colorNav" class="navbar navbar-expand-sm text-light" th:fragment="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img src="../../static/img/logo-rb.png" width="200px" alt="escudo del betis"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head th:replace="~{fragmentos/header::header}"></head>
+
+<body>
+
+  <nav id="colorNav" class="navbar navbar-expand-sm text-light" th:replace="~{fragmentos/nav::nav}"></nav>
+
+
+
+  <main>
+
+    <div class="container mt-3">
+      <h2>Hazte socio</h2>
+      <form action="" method="" name="NombreYApellidos">
+        <div class="row">
+          <div class="col input-group">
+            <label for="nombre" class="input-group-text">Nombre</label>
+            <input type="text" class="form-control" name="nombre">
+          </div>
+          <div class="col input-group">
+            <label for="apellidos" class="input-group-text">Apellidos</label>
+            <input type="text" class="form-control" name="apellidos">
+          </div>
+          <div class="col input-group">
+            <label for="fechaNacimiento" class="input-group-text">Fecha nacimiento</label>
+            <input type="date" class="form-control" name="fechaNacimiento">
+          </div>
         </div>
-      </nav>
-
-      
-
-          <main>
-
-            <div class="container mt-3">
-                <h2>Hazte socio</h2>
-                <form action="" method="" name="NombreYApellidos">
-                  <div class="row">
-                    <div class="col input-group">
-                      <label for="nombre" class="input-group-text">Nombre</label>  
-                      <input type="text" class="form-control" name="nombre">
-                    </div>
-                    <div class="col input-group">
-                       <label for="apellidos" class="input-group-text">Apellidos</label> 
-                      <input type="text" class="form-control"name="apellidos">
-                    </div>
-                    <div class="col input-group">
-                      <label for="fechaNacimiento" class="input-group-text">Fecha nacimiento</label>
-                    <input type="date" class="form-control" name="fechaNacimiento">
-                  </div>
-                  </div>
-                </form>
-              </div>
+      </form>
+    </div>
 
 
-              <div class="container mt-3 my-3">
-                <form action="" method="" name="DireccionYPais">
-                  <div class="row">
-                   
-                    <div class="col input-group">
-                       <label for="dni" class="input-group-text">DNI</label> 
-                      <input type="text" class="form-control"name="dni">
-                    </div>
-                    <div class="col input-group">
-                        <label for="pais" class="input-group-text">País</label>
-                        <input type="text" class="form-control" name="pais">
-                    </div>
-                    <div class="col input-group">
-                      <label for="telefono" class="input-group-text">Telefono</label>
-                        <input type="tel" class="form-control"  name="telefono">
-                      </div>
-                  </div>
-                </form>
-              </div>
+    <div class="container mt-3 my-3">
+      <form action="" method="" name="DireccionYPais">
+        <div class="row">
 
-              <div class="container mt-3 my-3">
-                <form action="" method="" name="CodigoPostalYProvinciaYUsuario">
-                  <div class="row">
-                    <div class="col input-group">
-                      <label for="direccion" class="input-group-text">Dirección</label>  
-                      <input type="text" class="form-control" name="nombre">
-                    </div>
-                    <div class="col input-group">
-                      <label for="provincia" class="input-group-text">Provincia</label>  
-                      <input type="text" class="form-control" name="provincia">
-                    </div>
-                    <div class="col input-group">
-                       <label for="codigoPostal" class="input-group-text">Código Postal</label> 
-                      <input type="number" class="form-control"name="codigoPostal">
-                    </div>
-                  
-                  </div>
-                </form>
-              </div>
+          <div class="col input-group">
+            <label for="dni" class="input-group-text">DNI</label>
+            <input type="text" class="form-control" name="dni">
+          </div>
+          <div class="col input-group">
+            <label for="pais" class="input-group-text">País</label>
+            <input type="text" class="form-control" name="pais">
+          </div>
+          <div class="col input-group">
+            <label for="telefono" class="input-group-text">Telefono</label>
+            <input type="tel" class="form-control" name="telefono">
+          </div>
+        </div>
+      </form>
+    </div>
 
-              <div class="container mt-3 my-3">
-                <form action="" method="" name="CorreoYcontraseña">
-                  <div class="row">
-                    <div class="col input-group">
-                      <label for="contraseña" class="input-group-text">Contraseña</label>  
-                      <input type="password" class="form-control" name="contraseña">
-                    </div>
-                    <div class="col input-group">
-                       <label for="repetirContraseña" class="input-group-text">Repetir contraseña</label> 
-                      <input type="password" class="form-control"name="repetirContraseña">
-                    </div>
-                    <div class="col input-group">
-                        <label for="correoElectronico" class="input-group-text">Correo Electrónico</label>
-                        <input type="email" class="form-control" name="correoElectronicos">
-                    </div>
-                  </div>
-                </form>
-              </div>
+    <div class="container mt-3 my-3">
+      <form action="" method="" name="CodigoPostalYProvinciaYUsuario">
+        <div class="row">
+          <div class="col input-group">
+            <label for="direccion" class="input-group-text">Dirección</label>
+            <input type="text" class="form-control" name="nombre">
+          </div>
+          <div class="col input-group">
+            <label for="provincia" class="input-group-text">Provincia</label>
+            <input type="text" class="form-control" name="provincia">
+          </div>
+          <div class="col input-group">
+            <label for="codigoPostal" class="input-group-text">Código Postal</label>
+            <input type="number" class="form-control" name="codigoPostal">
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="container mt-3 my-3">
+      <form action="" method="" name="CorreoYcontraseña">
+        <div class="row">
+          <div class="col input-group">
+            <label for="contraseña" class="input-group-text">Contraseña</label>
+            <input type="password" class="form-control" name="contraseña">
+          </div>
+          <div class="col input-group">
+            <label for="repetirContraseña" class="input-group-text">Repetir contraseña</label>
+            <input type="password" class="form-control" name="repetirContraseña">
+          </div>
+          <div class="col input-group">
+            <label for="correoElectronico" class="input-group-text">Correo Electrónico</label>
+            <input type="email" class="form-control" name="correoElectronicos">
+          </div>
+        </div>
+      </form>
+    </div>
 
 
-         </main>
+  </main>
 
-        <footer id="colorFooter" class="container-fluid text-center text-light">
-            <section class="row">
-                <div class="col-12 col-lg-4">
-                    <h3>Redes sociales</h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h3>Contacta con nosotros</h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h3>Legal</h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-            </section>
-        
-        
-        </footer>
-    </body>
+  <footer id="colorFooter" class="container-fluid text-center text-light">
+    <section class="row">
+      <div class="col-12 col-lg-4">
+        <h3>Redes sociales</h3>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <h3>Contacta con nosotros</h3>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <h3>Legal</h3>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </section>
+
+
+  </footer>
+</body>
+
 </html>
