@@ -28,4 +28,6 @@ li{
 
 
 /*Tabla*/
-
+table{
+    border: 1px solid green;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="~{fragmentos/headerAdmin::headerAdmin}"></head>
+    <head th:replace="~{fragmentos/header::header}"></head>
 <body>
     <nav th:replace="~{fragmentos/nav::nav}" id="colorNav" class="navbar navbar-expand-sm text-light">
         <div class="container-fluid">
@@ -18,13 +18,14 @@
         
 	<div class="container mt-3">
 		<h2>Lista de productos</h2>      
-		<table class="table table-striped">
+		<table class="table table-striped ">
 		  <thead>
 			<tr>
 			  <th>Número</th>
 			  <th>Nombre</th>
 			  <th>Descripción</th>
 			  <th>Precio</th>
+			  <th>Imagen</th>
 			</tr>
 		  </thead>
 		  <tbody>
@@ -33,6 +34,8 @@
 				<td th:text="${producto.nombre}"></td>
 				<td th:text="${producto.descripcion}">Red chair</td>
 				<td th:text="${#numbers.formatDecimal(producto.precio, 1, 2)+' €'}">$350</td>
+				<td th:text="${producto.imagen}"></td>
+				
 				
 			</tr>
 			

@@ -17,12 +17,30 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <nav id="colorNav" class="navbar navbar-expand-sm text-light" th:fragment="nav">
+  <nav id="colorNav" class="navbar navbar-expand-sm" th:fragment="nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)"><img src="../static/img/logo-rb.png" th:src="@{/img/logo-rb.png}" width="200px" alt="escudo del betis"></a>
+      <a id="colorNav" class="navbar-brand"><img src="../img/logo-rb.png" width="200px" alt="logo del betis"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link border text-light" href="javascript:void(0)">Balones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border text-light" href="javascript:void(0)">Equipaciónes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border text-light" href="javascript:void(0)">Accesorios</a>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse justify-content-end">
+            <i class="bi bi-search nav-item m-2 p-1 text-light border"></i>
+            <i class="bi bi-cart nav-item m-2 p-1 text-light border"></i>
+            <i class="bi bi-person nav-item m-2 p-1 text-light border"></i>
+        </div>
+      </div>
     </div>
   </nav>
 </body>

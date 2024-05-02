@@ -41,7 +41,7 @@
             <div class="card-body">
               <h4 th:text="${producto.nombre}" class="card-title"></h4>
               <p  th:text="${producto.precio + '€'}"class="card-text"></p>
-              <a href="#" class="btn btn-primary">Ir al producto</a>
+              <a th:href="@{./descripcionProducto}" class="btn btn-primary">Ir al producto</a>
             </div>
           </div>
       
@@ -50,11 +50,7 @@
 
 
 
-      <footer th:replace="fragmentos/footer::footer" id="colorFooter" class="container-fluid text-center text-light">
-      
-    
-    
-    </footer>
+      <footer th:replace="~{fragmentos/footer::footer}" id="colorFooter" class="container-fluid text-center text-light"></footer>
 
 
 </body>
