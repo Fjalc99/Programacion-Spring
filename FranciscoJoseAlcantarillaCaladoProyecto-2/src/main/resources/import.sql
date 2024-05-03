@@ -6,6 +6,9 @@ insert into Socio (id, nombre, apellidos, telefono, email, direccion, provincia,
 --insert into Socio (id, nombre, apellidos, telefono, email, direccion, provincia, codigo_Postal, dni, contrasenia, repetir_Contrasenia, fecha_De_Nacimiento) values (5,'Francisco','Alcantarilla Calado','98547894','fran@gmail.com','Sevilla','Sevilla','41110','47841521N','calado','calado','24-07-1999');
 
 
+
+
+
 -------------------------------------------
 /*Productos*/
 
@@ -15,3 +18,5 @@ insert into producto (id, nombre, descripcion, precio, imagen) values (3,'Equipa
 insert into producto (id, nombre, descripcion, precio, imagen) values (4,'Bufanda del derbi','Bufanda del derbi 23/24', 300.0, 'https://shop.realbetisbalompie.es/cdn/shop/files/000773_1.jpg?crop=center&v=1714122305&width=960');
 insert into producto (id, nombre, descripcion, precio, imagen) values (5,'Bufanda del derbi','Bufanda del derbi 23/24', 300.0, 'https://shop.realbetisbalompie.es/cdn/shop/files/000773_1.jpg?crop=center&v=1714122305&width=960');
 insert into producto (id, nombre, descripcion, precio, imagen) values (6,'Bufanda del derbi','Bufanda del derbi 23/24', 300.0, 'https://shop.realbetisbalompie.es/cdn/shop/files/000773_1.jpg?crop=center&v=1714122305&width=960');
+
+

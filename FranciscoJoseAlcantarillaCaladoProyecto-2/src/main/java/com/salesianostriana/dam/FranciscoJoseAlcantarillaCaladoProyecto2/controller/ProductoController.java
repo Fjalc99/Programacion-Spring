@@ -23,30 +23,30 @@ public class ProductoController {
 	}
 	
 	
-	@GetMapping("/producto")
+	@GetMapping("/tienda")
 	private String vistaTienda(Model model) {
 		model.addAttribute("listaProductos", productoservice.findAll());
 		return "producto";
 	}
 	
 	
-	/*@GetMapping("/descripcionProducto")
+	@GetMapping("/descripcionProducto")
 	private String vistaDescripcion(Model model) {
 		Producto producto = new Producto ();
 		model.addAttribute("vistaDescripcion", producto);
 		return "descripcionDelProducto";
-	}*/
+	}
 	
-	@GetMapping("/formularioProducto")
+	@GetMapping("/nuevo")
 	public String formularioProducto(Model model) {
-		Producto producto = new Producto ();
-		model.addAttribute("productoForm", producto);
+		model.addAttribute("producto", new  Producto());
 		
 		return "formularioProductos";
 	}
 	
-	@PostMapping("/addProducto")
-	public String submit(@ModelAttribute("productoForm")Producto producto, Model model) {
-		return "productosVistaAdmin";
+	@PostMapping("/nuevo/addProducto")
+	public String submit(@ModelAttribute("producto")Producto producto) {
+		productoservice.save(producto);
+		return "redirect:/productoAdmin";
 	}
 }
