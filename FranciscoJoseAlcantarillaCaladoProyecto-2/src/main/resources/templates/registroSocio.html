@@ -13,19 +13,19 @@
 
     <div class="container mt-3">
       <h2>Hazte socio</h2>
-      <form action="" method="" name="NombreYApellidos">
+      <form action="#" th:action="@{/nuevoSocios/addSocioNuevo}" method="POST" th:object="${socio}">
         <div class="row">
           <div class="col input-group">
             <label for="nombre" class="input-group-text">Nombre</label>
-            <input type="text" class="form-control" name="nombre">
+            <input type="text" class="form-control" name="nombre" th:field="*{nombre}">
           </div>
           <div class="col input-group">
             <label for="apellidos" class="input-group-text">Apellidos</label>
-            <input type="text" class="form-control" name="apellidos">
+            <input type="text" class="form-control" name="apellidos" th:field="*{apellidos}">
           </div>
           <div class="col input-group">
-            <label for="fechaNacimiento" class="input-group-text">Fecha nacimiento</label>
-            <input type="date" class="form-control" name="fechaNacimiento">
+            <label for="fechaDeNacimiento" class="input-group-text">Fecha nacimiento</label>
+            <input type="date" class="form-control" name="fechaDeNacimiento" th:field="*{fechaDeNacimiento}">
           </div>
         </div>
     </div>
@@ -37,15 +37,13 @@
 
           <div class="col input-group">
             <label for="dni" class="input-group-text">DNI</label>
-            <input type="text" class="form-control" name="dni">
+            <input type="text" class="form-control" name="dni" th:field="*{dni}">
           </div>
           <div class="col input-group">
-            <label for="pais" class="input-group-text">País</label>
-            <input type="text" class="form-control" name="pais">
-          </div>
+
           <div class="col input-group">
             <label for="telefono" class="input-group-text">Telefono</label>
-            <input type="tel" class="form-control" name="telefono">
+            <input type="tel" class="form-control" name="telefono" th:field="*{telefono}">
           </div>
         </div>
       </form>
@@ -55,15 +53,15 @@
         <div class="row">
           <div class="col input-group">
             <label for="direccion" class="input-group-text">Dirección</label>
-            <input type="text" class="form-control" name="nombre">
+            <input type="text" class="form-control" name="direccion" th:field="*{direccion}">
           </div>
           <div class="col input-group">
             <label for="provincia" class="input-group-text">Provincia</label>
-            <input type="text" class="form-control" name="provincia">
+            <input type="text" class="form-control" name="provincia" th:field="*{provincia}">
           </div>
           <div class="col input-group">
             <label for="codigoPostal" class="input-group-text">Código Postal</label>
-            <input type="number" class="form-control" name="codigoPostal">
+            <input type="number" class="form-control" name="codigoPostal" th:field="*{codigoPostal}">
           </div>
 
         </div>
@@ -73,16 +71,16 @@
     <div class="container mt-3 my-3">
         <div class="row">
           <div class="col input-group">
-            <label for="contraseña" class="input-group-text">Contraseña</label>
-            <input type="password" class="form-control" name="contraseña">
+            <label for="contrasenia" class="input-group-text">Contraseña</label>
+            <input type="password" class="form-control" name="contrasenia" th:field="*{contrasenia}">
           </div>
           <div class="col input-group">
-            <label for="repetirContraseña" class="input-group-text">Repetir contraseña</label>
-            <input type="password" class="form-control" name="repetirContraseña">
+            <label for="repetirContrasenia" class="input-group-text">Repetir contraseña</label>
+            <input type="password" class="form-control" name="repetirContrasenia" th:field="*{repetirContrasenia}">
           </div>
           <div class="col input-group">
             <label for="correoElectronico" class="input-group-text">Correo Electrónico</label>
-            <input type="email" class="form-control" name="correoElectronicos">
+            <input type="email" class="form-control" name="correoElectronico" th:field="*{email}">
           </div>
         </div>
       </form>

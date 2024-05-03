@@ -44,6 +44,9 @@ public class ProductoController {
 		return "formularioProductos";
 	}
 	
+	
+	
+	
 	@PostMapping("/nuevo/addProducto")
 	public String submit(@ModelAttribute("producto")Producto producto) {
 		productoservice.save(producto);

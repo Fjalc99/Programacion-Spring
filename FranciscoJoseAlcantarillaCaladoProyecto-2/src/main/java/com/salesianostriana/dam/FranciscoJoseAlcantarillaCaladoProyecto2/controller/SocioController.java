@@ -27,11 +27,11 @@ public class SocioController {
 		return "login";		
 	}
 	
-	@PostMapping("/addSocio")
-	public String submit(@ModelAttribute("loginForm")Socio socio, Model model) {
+	@PostMapping("/loginSocio/addSocio")
+	public String submit (@ModelAttribute("loginForm")Socio socio, Model model) {
 		model.addAttribute("socio", socio);
 		
-		return"view";
+		return"redirect:/tienda";
 	}
 	
 	
@@ -41,13 +41,16 @@ public class SocioController {
 		return "socioVistaAdmin";
 	}
 	
-	@GetMapping("/registroSocios")
-	private String formRegistro (Model model) {
-		Socio socio = new Socio ();
-		
-		model.addAttribute("formSocios", socio);
-		
+	@GetMapping("/nuevoSocios")
+	private String formRegistro (Model model) {	
+		model.addAttribute("socio", new Socio());
 		return "registroSocio";
+	}
+	
+	@PostMapping("/nuevoSocios/addSocioNuevo")
+	public String submitRegistro (@ModelAttribute("socio") Socio socio) {
+		socioService.save(socio);
+		return "redirect:/sociosAdmin";
 	}
 	
 	
