@@ -12,12 +12,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
-@NoArgsConstructor @AllArgsConstructor
 @Entity
+@NoArgsConstructor @AllArgsConstructor
 public class Socio {
-
+	
 	@Id @GeneratedValue
 	private Long id;
 	
@@ -35,3 +34,6 @@ public class Socio {
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private LocalDate fechaDeNacimiento;
 }
+
+
+

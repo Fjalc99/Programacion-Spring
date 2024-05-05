@@ -18,6 +18,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+		  <th>Numero</th>
           <th>Nombre</th>
           <th>Apellidos</th>
           <th>Telefono</th>
@@ -37,6 +38,7 @@
 
 
         <tr th:each="socio : ${listaSocios}">
+		  <td th:text="${socioStat.count}"></td>
           <td th:text="${socio.nombre}"></td>
           <td th:text="${socio.apellidos}"></td>
           <td th:text="${socio.telefono}"></td>

@@ -18,6 +18,10 @@ public class SocioController {
 	@Autowired
 	private SocioService socioService;
 	
+	
+	
+	//Login
+	
 	@GetMapping("/loginSocio")
 	private String loginSocio(Model model) {
 		
@@ -34,6 +38,9 @@ public class SocioController {
 		return"redirect:/tienda";
 	}
 	
+	
+	//--------------------------------------------------------
+	//Socio Nuevo
 	
 	@GetMapping("/sociosAdmin")
 	private String listarSocios (Model model) {
